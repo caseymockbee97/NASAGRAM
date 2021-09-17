@@ -1,9 +1,9 @@
 {
-  "short_name": "NASAGRAM",
-  "name": "NASAGRAM",
+  "short_name": "SPACETAGRAM",
+  "name": "Spacetagram: Image-sharing from the final frontier",
   "icons": [
     {
-      "src": "NASAGRAM_ICON.ico",
+      "src": "SG_ICON.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
