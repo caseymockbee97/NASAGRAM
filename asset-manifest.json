@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/nasagram/static/js/main.f057ca86.chunk.js",
-    "main.js.map": "/nasagram/static/js/main.f057ca86.chunk.js.map",
-    "runtime-main.js": "/nasagram/static/js/runtime-main.7f0654da.js",
-    "runtime-main.js.map": "/nasagram/static/js/runtime-main.7f0654da.js.map",
-    "static/css/2.da9d88d7.chunk.css": "/nasagram/static/css/2.da9d88d7.chunk.css",
-    "static/js/2.9dd0b8c5.chunk.js": "/nasagram/static/js/2.9dd0b8c5.chunk.js",
-    "static/js/2.9dd0b8c5.chunk.js.map": "/nasagram/static/js/2.9dd0b8c5.chunk.js.map",
-    "index.html": "/nasagram/index.html",
-    "static/css/2.da9d88d7.chunk.css.map": "/nasagram/static/css/2.da9d88d7.chunk.css.map",
-    "static/js/2.9dd0b8c5.chunk.js.LICENSE.txt": "/nasagram/static/js/2.9dd0b8c5.chunk.js.LICENSE.txt",
-    "static/media/SPACETAGRAM_HEADER.905c93a6.svg": "/nasagram/static/media/SPACETAGRAM_HEADER.905c93a6.svg",
-    "static/media/index.css": "/nasagram/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
+    "main.js": "/spacetagram/static/js/main.97e99e7c.chunk.js",
+    "main.js.map": "/spacetagram/static/js/main.97e99e7c.chunk.js.map",
+    "runtime-main.js": "/spacetagram/static/js/runtime-main.84e81113.js",
+    "runtime-main.js.map": "/spacetagram/static/js/runtime-main.84e81113.js.map",
+    "static/css/2.af5f99be.chunk.css": "/spacetagram/static/css/2.af5f99be.chunk.css",
+    "static/js/2.ca2ad1dc.chunk.js": "/spacetagram/static/js/2.ca2ad1dc.chunk.js",
+    "static/js/2.ca2ad1dc.chunk.js.map": "/spacetagram/static/js/2.ca2ad1dc.chunk.js.map",
+    "index.html": "/spacetagram/index.html",
+    "static/css/2.af5f99be.chunk.css.map": "/spacetagram/static/css/2.af5f99be.chunk.css.map",
+    "static/js/2.ca2ad1dc.chunk.js.LICENSE.txt": "/spacetagram/static/js/2.ca2ad1dc.chunk.js.LICENSE.txt",
+    "static/media/SPACETAGRAM_HEADER.905c93a6.svg": "/spacetagram/static/media/SPACETAGRAM_HEADER.905c93a6.svg",
+    "static/media/index.css": "/spacetagram/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f0654da.js",
-    "static/css/2.da9d88d7.chunk.css",
-    "static/js/2.9dd0b8c5.chunk.js",
-    "static/js/main.f057ca86.chunk.js"
+    "static/js/runtime-main.84e81113.js",
+    "static/css/2.af5f99be.chunk.css",
+    "static/js/2.ca2ad1dc.chunk.js",
+    "static/js/main.97e99e7c.chunk.js"
   ]
 }
