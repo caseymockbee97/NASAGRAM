@@ -4,6 +4,7 @@ import {
   Grid,
   IconButton,
   makeStyles,
+  Tooltip,
   Typography,
 } from "@material-ui/core";
 import FavoriteIcon from "@material-ui/icons/Favorite";
@@ -19,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
     width: "94%",
     margin: "5px 3%",
   },
+  card: {
+    maxWidth: "600px",
+    margin: "0 auto",
+  },
 }));
 
 export default function ContentComponent(props) {
@@ -29,7 +34,7 @@ export default function ContentComponent(props) {
 
   return (
     <Grid item sm={12}>
-      <Card style={{ maxWidth: "600px", margin: "0 auto" }} variant="outlined">
+      <Card className={classes.card} variant="outlined">
         <div className={classes.textContainer}>
           <Typography variant="h5" component="h2" align="center">
             {title}
@@ -37,19 +42,28 @@ export default function ContentComponent(props) {
         </div>
         <img className={classes.image} src={url} alt="space" />
         <div className={classes.textContainer}>
-          <Typography variant="caption">{explanation}</Typography>
+          <Typography variant="caption" component="p">
+            {explanation}
+          </Typography>
           {copyright && (
             <Typography align="left" variant="body2">
               - {copyright}
             </Typography>
           )}
           <div>
-            <IconButton
-              aria-label={isLiked ? "unlike picture" : "like picture"}
-              onClick={() => setIsLiked((prev) => !prev)}
+            <Tooltip
+              title={isLiked ? "Unlike Picture" : "Like Picture"}
+              arrow
+              enterDelay={500}
+              leaveDelay={100}
             >
-              {isLiked ? <FavoriteIcon color="primary" /> : <FavoriteIcon />}
-            </IconButton>
+              <IconButton
+                aria-label={isLiked ? "unlike picture" : "like picture"}
+                onClick={() => setIsLiked((prev) => !prev)}
+              >
+                {isLiked ? <FavoriteIcon color="primary" /> : <FavoriteIcon />}
+              </IconButton>
+            </Tooltip>
             <Typography variant="caption">
               <Moment parse="YYYY-MM-DD" format="D MMM YYYY">
                 {date}

@@ -19,7 +19,7 @@ export const useStore = create(
           throw new Error(`Response status: ${response.status}, not 200.`);
         })
         .then((res) => {
-          // removes duplicates, removes non-images
+          // removes duplicates and non-images
           set((prev) => ({
             APODs: [
               ...new Set(
@@ -43,6 +43,7 @@ export const useStore = create(
           throw new Error(`Response status: ${response.status}, not 200.`);
         })
         .then((res) => {
+          // removes duplicates and non-images
           set((prev) => ({
             APODs: [
               ...new Set(

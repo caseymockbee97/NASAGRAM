@@ -3,15 +3,21 @@ import {
   Grid,
   makeStyles,
   Button,
+  Card,
   Typography,
 } from "@material-ui/core";
 import React, { useEffect } from "react";
 import ContentComponent from "../components/ContentComponent";
 import { useStore } from "../store/store";
+import LoadingComponent from "../components/LoadingComponent";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     marginTop: "25px",
+  },
+  card: {
+    maxWidth: "600px",
+    margin: "0 auto",
   },
 }));
 export default function ContentView() {
@@ -36,21 +42,20 @@ export default function ContentView() {
         justifyContent="center"
         alignItems="flex-start"
       >
-        {isLoading && (
-          <Grid item sm={12}>
-            <Typography align="center">Loading</Typography>
-          </Grid>
-        )}
+        <Grid item sm={12}>
+          <Card className={classes.card} variant="outlined">
+            <Typography variant="body2" align="center">
+              🚀 Images from Nasa's Astronomy Picture of the Day API. 🚀
+            </Typography>
+          </Card>
+        </Grid>
+        {isLoading && <LoadingComponent />}
 
         {APODs &&
           APODs.map((post, i) => (
             <ContentComponent key={post.url} post={post} />
           ))}
-        {isLoadingMore && (
-          <Grid item sm={12}>
-            <Typography align="center">Loading More</Typography>
-          </Grid>
-        )}
+        {isLoadingMore && <LoadingComponent />}
         {!isLoadingMore && !isLoading && (
           <Button variant="outlined" onClick={fetchMoreAPODs}>
             Load More

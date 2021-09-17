@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, makeStyles, Toolbar, Typography } from "@material-ui/core";
 
-import SPACETAGRAM_HEADER from "../assests/SPACETAGRAM_HEADER.svg";
+import SPACETAGRAM_HEADER from "../assets/SPACETAGRAM_HEADER.svg";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
