@@ -1,0 +1,2 @@
+.loading{width:50px;pointer-events:none}@media (prefers-reduced-motion:no-preference){.loading{-webkit-animation:loading-spin 1s linear infinite;animation:loading-spin 1s linear infinite}}@-webkit-keyframes loading-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes loading-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/*# sourceMappingURL=main.70175a92.chunk.css.map */
