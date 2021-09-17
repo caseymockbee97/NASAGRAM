@@ -3,7 +3,6 @@ import {
   Grid,
   makeStyles,
   Button,
-  Card,
   Typography,
 } from "@material-ui/core";
 import React, { useEffect } from "react";
@@ -43,11 +42,9 @@ export default function ContentView() {
         alignItems="flex-start"
       >
         <Grid item sm={12}>
-          <Card className={classes.card} variant="outlined">
-            <Typography variant="body2" align="center">
-              🚀 Images from Nasa's Astronomy Picture of the Day API. 🚀
-            </Typography>
-          </Card>
+          <Typography variant="body2" align="center">
+            🚀 Images from Nasa's Astronomy Picture of the Day API. 🚀
+          </Typography>
         </Grid>
         {isLoading && <LoadingComponent />}
 

@@ -14,8 +14,10 @@ Shopify Front End Developer Intern Challenge
 - Zustand (global store)
 - React-Moment (formatting dates)
 - gh-pages (deployment)
+- copy-to-clipboard
 
 ## Refs:
 
 [Scroll to Top](https://www.coderomeos.org/scroll-to-top-of-the-page-a-simple-react-component)
 [Converting SVG to Icon](https://convertio.co/svg-ico/)
+[Font for Header](https://www.fontspace.com/edge-of-the-galaxy-font-f45748)

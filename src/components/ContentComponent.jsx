@@ -8,7 +8,9 @@ import {
   Typography,
 } from "@material-ui/core";
 import FavoriteIcon from "@material-ui/icons/Favorite";
+import LinkIcon from "@material-ui/icons/Link";
 import Moment from "react-moment";
+import copy from "copy-to-clipboard";
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -24,13 +26,23 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "600px",
     margin: "0 auto",
   },
+  copied: {
+    color: theme.palette.secondary,
+  },
 }));
 
 export default function ContentComponent(props) {
   const classes = useStyles(props);
   const [isLiked, setIsLiked] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
   const { title, date, url, explanation, copyright } = props.post;
+
+  const copyToClipboard = (url) => {
+    copy(url, {
+      onCopy: setIsCopied(true),
+    });
+  };
 
   return (
     <Grid item sm={12}>
@@ -69,6 +81,25 @@ export default function ContentComponent(props) {
                 {date}
               </Moment>
             </Typography>
+            <Tooltip
+              title="Copy to clipboard"
+              arrow
+              enterDelay={500}
+              leaveDelay={100}
+            >
+              <IconButton
+                onClick={() => copyToClipboard(url)}
+                aria-label={"copy link to photo"}
+              >
+                <LinkIcon color="secondary" />
+              </IconButton>
+            </Tooltip>
+
+            {isCopied && (
+              <Typography color="secondary" variant="caption">
+                copied
+              </Typography>
+            )}
           </div>
         </div>
       </Card>
