@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/spacetagram/static/css/main.70175a92.chunk.css",
-    "main.js": "/spacetagram/static/js/main.d07face3.chunk.js",
-    "main.js.map": "/spacetagram/static/js/main.d07face3.chunk.js.map",
+    "main.js": "/spacetagram/static/js/main.e35f2e43.chunk.js",
+    "main.js.map": "/spacetagram/static/js/main.e35f2e43.chunk.js.map",
     "runtime-main.js": "/spacetagram/static/js/runtime-main.84e81113.js",
     "runtime-main.js.map": "/spacetagram/static/js/runtime-main.84e81113.js.map",
     "static/css/2.af5f99be.chunk.css": "/spacetagram/static/css/2.af5f99be.chunk.css",
-    "static/js/2.40221823.chunk.js": "/spacetagram/static/js/2.40221823.chunk.js",
-    "static/js/2.40221823.chunk.js.map": "/spacetagram/static/js/2.40221823.chunk.js.map",
+    "static/js/2.3d4e1f7a.chunk.js": "/spacetagram/static/js/2.3d4e1f7a.chunk.js",
+    "static/js/2.3d4e1f7a.chunk.js.map": "/spacetagram/static/js/2.3d4e1f7a.chunk.js.map",
     "index.html": "/spacetagram/index.html",
     "static/css/2.af5f99be.chunk.css.map": "/spacetagram/static/css/2.af5f99be.chunk.css.map",
     "static/css/main.70175a92.chunk.css.map": "/spacetagram/static/css/main.70175a92.chunk.css.map",
-    "static/js/2.40221823.chunk.js.LICENSE.txt": "/spacetagram/static/js/2.40221823.chunk.js.LICENSE.txt",
+    "static/js/2.3d4e1f7a.chunk.js.LICENSE.txt": "/spacetagram/static/js/2.3d4e1f7a.chunk.js.LICENSE.txt",
     "static/media/SPACETAGRAM_HEADER.905c93a6.svg": "/spacetagram/static/media/SPACETAGRAM_HEADER.905c93a6.svg",
     "static/media/loadingRocket.c568087d.svg": "/spacetagram/static/media/loadingRocket.c568087d.svg",
     "static/media/index.css": "/spacetagram/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
@@ -19,8 +19,8 @@
   "entrypoints": [
     "static/js/runtime-main.84e81113.js",
     "static/css/2.af5f99be.chunk.css",
-    "static/js/2.40221823.chunk.js",
+    "static/js/2.3d4e1f7a.chunk.js",
     "static/css/main.70175a92.chunk.css",
-    "static/js/main.d07face3.chunk.js"
+    "static/js/main.e35f2e43.chunk.js"
   ]
 }
