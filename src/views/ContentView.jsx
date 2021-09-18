@@ -43,7 +43,7 @@ export default function ContentView() {
       >
         <Grid item sm={12}>
           <Typography variant="body2" align="center">
-            🚀 Images from Nasa's Astronomy Picture of the Day API. 🚀
+            🚀 Images from Nasa's APOD API. 🚀
           </Typography>
         </Grid>
         {isLoading && <LoadingComponent />}

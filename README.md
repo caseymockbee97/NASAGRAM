@@ -14,7 +14,7 @@ Shopify Front End Developer Intern Challenge
 - Zustand (global store)
 - React-Moment (formatting dates)
 - gh-pages (deployment)
-- copy-to-clipboard
+- copy-to-clipboard (copying link for images)
 
 ## Refs:
 

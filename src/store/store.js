@@ -9,6 +9,15 @@ export const useStore = create(
     APODs: [],
     isLoading: false,
     isLoadingMore: false,
+    setAndFilterAPODs: (res) => {
+      set((prev) => ({
+        APODs: [
+          ...new Set(
+            prev.APODs.concat(res.filter((post) => post.media_type === "image"))
+          ),
+        ],
+      }));
+    },
     fetchAPODs: () => {
       set(() => ({ isLoading: true }));
       fetch(baseUrl + "&count=10")
@@ -19,16 +28,7 @@ export const useStore = create(
           throw new Error(`Response status: ${response.status}, not 200.`);
         })
         .then((res) => {
-          // removes duplicates and non-images
-          set((prev) => ({
-            APODs: [
-              ...new Set(
-                prev.APODs.concat(
-                  res.filter((post) => post.media_type === "image")
-                )
-              ),
-            ],
-          }));
+          get().setAndFilterAPODs(res);
           set(() => ({ isLoading: false }));
         })
         .catch((error) => console.log(error.message));
@@ -43,16 +43,7 @@ export const useStore = create(
           throw new Error(`Response status: ${response.status}, not 200.`);
         })
         .then((res) => {
-          // removes duplicates and non-images
-          set((prev) => ({
-            APODs: [
-              ...new Set(
-                prev.APODs.concat(
-                  res.filter((post) => post.media_type === "image")
-                )
-              ),
-            ],
-          }));
+          get().setAndFilterAPODs(res);
           set(() => ({ isLoadingMore: false }));
         })
         .catch((error) => console.log(error.message));
