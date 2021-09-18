@@ -18,3 +18,4 @@ This was created for the Shopify Front End Developer Intern Challenge - Winter 2
 - [Scroll to Top](https://www.coderomeos.org/scroll-to-top-of-the-page-a-simple-react-component)
 - [Converting SVG to Icon](https://convertio.co/svg-ico/)
 - [Font for Header](https://www.fontspace.com/edge-of-the-galaxy-font-f45748)
+- [custom useOnScreen Hook](https://www.youtube.com/watch?v=QD4GcZJObXg&ab_channel=LeighHalliday)

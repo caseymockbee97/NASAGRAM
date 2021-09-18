@@ -1,14 +1,10 @@
-import {
-  Container,
-  Grid,
-  makeStyles,
-  Button,
-  Typography,
-} from "@material-ui/core";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import React, { useEffect } from "react";
 import ContentComponent from "../components/ContentComponent";
 import { useStore } from "../store/store";
 import LoadingComponent from "../components/LoadingComponent";
+import LoadMoreComponent from "../components/LoadMoreComponent";
+import useOnScreen from "../hooks/useOnScreenHook";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -19,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
   },
 }));
+
 export default function ContentView() {
   const classes = useStyles();
 
@@ -27,6 +24,8 @@ export default function ContentView() {
   const fetchAPODs = useStore((state) => state.fetchAPODs);
   const fetchMoreAPODs = useStore((state) => state.fetchMoreAPODs);
   const isLoadingMore = useStore((state) => state.isLoadingMore);
+
+  const [setRef, isVisible] = useOnScreen({ rootMargin: "300px" });
 
   useEffect(() => {
     fetchAPODs();
@@ -53,11 +52,9 @@ export default function ContentView() {
             <ContentComponent key={post.url} post={post} />
           ))}
         {isLoadingMore && <LoadingComponent />}
-        {!isLoadingMore && !isLoading && (
-          <Button variant="outlined" onClick={fetchMoreAPODs}>
-            Load More
-          </Button>
-        )}
+        {isVisible && <LoadMoreComponent fetchMoreAPODs={fetchMoreAPODs} />}
+        {/* infinite scroll trigger, protects from loading more while loading */}
+        {!isLoading && <div aria-hidden="true" ref={setRef}></div>}
       </Grid>
     </Container>
   );

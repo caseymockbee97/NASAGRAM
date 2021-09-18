@@ -11,11 +11,9 @@ export const useStore = create(
     isLoadingMore: false,
     setAndFilterAPODs: (res) => {
       set((prev) => ({
-        APODs: [
-          ...new Set(
-            prev.APODs.concat(res.filter((post) => post.media_type === "image"))
-          ),
-        ],
+        APODs: prev.APODs.concat(
+          res.filter((post) => post.media_type === "image")
+        ),
       }));
     },
     fetchAPODs: () => {
