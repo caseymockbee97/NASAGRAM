@@ -2,7 +2,7 @@
 
 # About
 
-This was created for the Shopify Front End Developer Intern Challenge - Winter 2022.
+Spacetagram is a front-end web app that is connected to Nasa's APOD Api.
 
 # Tech Stack
 
